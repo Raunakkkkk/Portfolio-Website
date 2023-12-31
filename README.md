@@ -24,6 +24,10 @@ If you want to contact me, you can reach me through below handles.
 
 <a  href="mailto:agarwalraunak2000@gmail.com " ><img  alt="Gmail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 
+<a href="https://www.instagram.com/agarwal.raunakk/" target="_blank">
+  <img alt="Instagram" src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+</a>
+
 </div>
 
 © 2024 Raunak Agarwal
