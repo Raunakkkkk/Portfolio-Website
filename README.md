@@ -21,8 +21,6 @@ Explore my portfolio website: [Visit Now🚀](https://raunakkkkk.github.io/Portf
 - **Tilt.js:** Enables interactive tilting of elements, adding a playful and dynamic aspect to the design.
 - **Scroll Reveal:** Animates elements as they become visible within the viewport, enhancing the user experience.
 - **Font Awesome:** Integrates a wide range of icons, contributing to visual enhancements and iconography.
-- **JSON:** Facilitates data storage and retrieval in a structured format, enhancing flexibility in content management.
-
 
 ## 📬 Contact
 
