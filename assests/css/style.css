@@ -447,201 +447,157 @@ header .navbar ul li a:hover{
 }
 /* about media queries ends*/
 /* about section ends */
-
 /* experience section starts */
 .experience {
-  min-height: 50vh;
-  padding: 2rem 1rem;
-  background-color: #f4f4f4; /* Light background for contrast */
+  min-height: 60vh; /* Increased min-height */
+  padding: 3rem 2rem; /* Increased padding */
+  background-color: #f4f4f4;
 }
 
 .experience .heading {
-  text-align: center; /* Center align the heading */
-  font-size: 4rem; /* Larger font size for emphasis */
-  color: black; /* Heading color */
-  margin-bottom: 2rem; /* Space below the heading */
+  text-align: center;
+  font-size: 4rem; /* Keep the font size as is */
+  color: #01225a; /* Change color to match theme */
+  margin-bottom: 3rem; /* Increased space below the heading */
+  padding: 1rem; /* Add padding */
+  border-radius: 8px; /* Rounded corners */
 }
 
 .experience .heading i {
-  margin-right: 0.5rem; /* Space between icon and text */
-  font-size: 3rem; /* Size of the icon */
-  vertical-align: middle; /* Align icon vertically with text */
+  margin-right: 0.5rem;
+  font-size: 3rem; /* Keep the font size as is */
+  vertical-align: middle;
 }
 
 .experience .timeline {
   position: relative;
-  max-width: 800px; /* Max width for single entry */
-  margin: 0 auto; /* Center align */
+  max-width: 900px; /* Increased max width for single entry */
+  margin: 0 auto;
 }
 
 .experience .timeline::after {
   content: '';
   position: absolute;
-  width: 4px; /* Thinner timeline */
-  background: #0f46a2; /* Matching color */
+  width: 6px; /* Slightly thicker timeline */
+  background: #0f46a2;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -2px;
-  z-index: -1; /* Behind content */
+  margin-left: -3px;
+  z-index: -1;
 }
 
 .experience .container {
-  padding: 1.5rem 2rem; /* Increased padding for better spacing */
+  padding: 2rem 3rem; /* Increased padding */
   position: relative;
-  background-color: #fff; /* White background for containers */
+  background-color: #fff;
   width: 100%;
-  margin: 1.5rem 0; /* Space between entries */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 2rem 0; /* Increased space between entries */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
 }
 
-/* Circles on timeline */
 .experience .container::after {
   content: "\f0b1";
   position: absolute;
-  width: 30px; /* Larger circle */
-  height: 30px; /* Larger circle */
-  right: -15px;
-  background-color: #01225a;
-  border: 4px solid #fff; /* White border for contrast */
-  top: 20px;
+  width: 35px; /* Larger circle */
+  height: 35px;
+  right: -17.5px;
+  background-color: #0242b0;
+  border: 5px solid #fff; /* Thicker white border */
+  top: 25px;
   border-radius: 50%;
-  font-size: 2rem; /* Larger font size */
+  font-size: 2.5rem; /* Larger font size */
   text-align: center;
   color: #fff;
   font-family: 'Font Awesome\ 5 Free';
 }
 
-/* Arrow styles */
 .experience .container::before {
   content: '';
   position: absolute;
-  top: 20px;
+  top: 25px;
   width: 0;
   height: 0;
-  border: 12px solid transparent; /* Larger arrows */
+  border: 14px solid transparent; /* Larger arrows */
 }
 
 .experience .left::before {
-  right: 30px;
-  border-left-color: #0f46a2; /* Arrow color */
+  right: 35px;
+  border-left-color: #0242b0;
 }
 
 .experience .right::before {
-  left: 30px;
-  border-right-color: #0f46a2; /* Arrow color */
+  left: 35px;
+  border-right-color: #0242b0;
 }
 
 .experience .content {
   position: relative;
-  padding: 1.5rem;
-  border-radius: 6px;
+  padding: 2rem; /* Increased padding */
+  border-radius: 8px; /* Slightly more rounded corners */
   color: #333;
 }
 
 .experience .content .tag {
-  font-size: 1.8rem; /* Larger tag font size */
-  padding: 1rem;
-  background-color: #01225a; /* Background for tag */
+  display: flex !important;
+  align-items: center !important;
+  gap: 2.5rem;
+  font-size: 1.8rem;
+  padding: 1.2rem; /* Increased padding */
+  background-color: #0242b0;
   color: #fff;
-  border-radius: 6px 6px 0 0; /* Rounded top corners */
+  border-radius: 8px 8px 0 0; /* More rounded top corners */
+}
+
+.experience .content .tag img {
+  width: 40px; /* Adjust the logo size */
+  height: auto;
+  margin-right: 1rem;
 }
 
 .experience .content .desc {
-  padding: 1rem;
+  padding: 1.2rem; /* Increased padding */
 }
 
 .experience .content .desc h3 {
-  font-size: 1.8rem; /* Larger heading size */
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
 .experience .content .desc p {
-  font-size: 1.7rem; /* Larger description size */
+  font-size: 1.7rem;
   margin: 0;
-  line-height: 1.6; /* Increase line height for better readability */
-  color: #555; /* Slightly lighter color for the paragraph text */
+  line-height: 1.6;
+  color: #555;
 }
 
-.experience .content .desc p + p {
-  margin-top: 1rem; /* Space between the first and second paragraph */
-  font-style: italic; /* Italicize the second paragraph */
-  color: #777; /* Lighter color for additional contrast */
-  font-size: 1.6rem;
-}
-
-
-/* View all button */
-.morebtn {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.morebtn .btn {
-  position: relative;
-  line-height: 0;
-  padding: 1.6rem 3rem;
-  border-radius: .5em;
-  transition: 0.3s;
-  color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 4px 8px rgba(48, 68, 247, .6);
-  text-align: center;
-  text-decoration: none; /* Remove underline */
-}
-
-.morebtn .btn span {
-  font-weight: 600;
-  font-size: 1.8rem; /* Larger button text */
-}
-
-.morebtn .btn i {
-  margin-left: 0.3rem;
-  font-size: 1.6rem; /* Larger icon size */
-  transition: 0.3s;
-}
-
-.morebtn .btn:hover {
-  background: #1a047e;
-}
-
-.morebtn .btn:hover i {
-  transform: translateX(5px);
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
   .experience .timeline {
-    margin-top: 2rem;
+    margin-top: 3rem; /* Increased margin-top */
   }
   .experience .timeline::after {
-    left: 31px;
+    left: 35px; /* Adjusted position */
   }
   .experience .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem; /* Increased padding */
+    padding-right: 1.5rem;
   }
   .experience .container::after {
-    font-size: 1.8rem;
+    font-size: 2.2rem; /* Increased font size */
   }
   .experience .container::before {
-    left: 10px;
+    left: 12px; /* Adjusted position */
   }
   .experience .left::before {
-    right: 20px;
+    right: 25px; /* Adjusted position */
   }
   .experience .right::before {
-    left: 20px;
-  }
-  .morebtn {
-    margin-top: 3rem;
+    left: 25px; /* Adjusted position */
   }
 }
-/* experience media queries ends */
-
 /* experience section ends */
+
 
 
 /* skills section starts */
