@@ -839,7 +839,7 @@ header .navbar ul li a:hover{
 .work .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr)); /* Ensure 3 cards per row, but adjust to fit space */
-  gap: 1.5rem;
+  gap: 2.5rem;
   margin: 2rem;
 }
 .work .box-container .box {
