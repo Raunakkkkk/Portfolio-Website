@@ -448,6 +448,201 @@ header .navbar ul li a:hover{
 /* about media queries ends*/
 /* about section ends */
 
+/* experience section starts */
+.experience {
+  min-height: 50vh;
+  padding: 2rem 1rem;
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.experience .heading {
+  text-align: center; /* Center align the heading */
+  font-size: 4rem; /* Larger font size for emphasis */
+  color: black; /* Heading color */
+  margin-bottom: 2rem; /* Space below the heading */
+}
+
+.experience .heading i {
+  margin-right: 0.5rem; /* Space between icon and text */
+  font-size: 3rem; /* Size of the icon */
+  vertical-align: middle; /* Align icon vertically with text */
+}
+
+.experience .timeline {
+  position: relative;
+  max-width: 800px; /* Max width for single entry */
+  margin: 0 auto; /* Center align */
+}
+
+.experience .timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px; /* Thinner timeline */
+  background: #0f46a2; /* Matching color */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+  z-index: -1; /* Behind content */
+}
+
+.experience .container {
+  padding: 1.5rem 2rem; /* Increased padding for better spacing */
+  position: relative;
+  background-color: #fff; /* White background for containers */
+  width: 100%;
+  margin: 1.5rem 0; /* Space between entries */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Circles on timeline */
+.experience .container::after {
+  content: "\f0b1";
+  position: absolute;
+  width: 30px; /* Larger circle */
+  height: 30px; /* Larger circle */
+  right: -15px;
+  background-color: #01225a;
+  border: 4px solid #fff; /* White border for contrast */
+  top: 20px;
+  border-radius: 50%;
+  font-size: 2rem; /* Larger font size */
+  text-align: center;
+  color: #fff;
+  font-family: 'Font Awesome\ 5 Free';
+}
+
+/* Arrow styles */
+.experience .container::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent; /* Larger arrows */
+}
+
+.experience .left::before {
+  right: 30px;
+  border-left-color: #0f46a2; /* Arrow color */
+}
+
+.experience .right::before {
+  left: 30px;
+  border-right-color: #0f46a2; /* Arrow color */
+}
+
+.experience .content {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 6px;
+  color: #333;
+}
+
+.experience .content .tag {
+  font-size: 1.8rem; /* Larger tag font size */
+  padding: 1rem;
+  background-color: #01225a; /* Background for tag */
+  color: #fff;
+  border-radius: 6px 6px 0 0; /* Rounded top corners */
+}
+
+.experience .content .desc {
+  padding: 1rem;
+}
+
+.experience .content .desc h3 {
+  font-size: 1.8rem; /* Larger heading size */
+  font-weight: 600;
+}
+
+.experience .content .desc p {
+  font-size: 1.7rem; /* Larger description size */
+  margin: 0;
+  line-height: 1.6; /* Increase line height for better readability */
+  color: #555; /* Slightly lighter color for the paragraph text */
+}
+
+.experience .content .desc p + p {
+  margin-top: 1rem; /* Space between the first and second paragraph */
+  font-style: italic; /* Italicize the second paragraph */
+  color: #777; /* Lighter color for additional contrast */
+  font-size: 1.6rem;
+}
+
+
+/* View all button */
+.morebtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.morebtn .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: .5em;
+  transition: 0.3s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 4px 8px rgba(48, 68, 247, .6);
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+}
+
+.morebtn .btn span {
+  font-weight: 600;
+  font-size: 1.8rem; /* Larger button text */
+}
+
+.morebtn .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.6rem; /* Larger icon size */
+  transition: 0.3s;
+}
+
+.morebtn .btn:hover {
+  background: #1a047e;
+}
+
+.morebtn .btn:hover i {
+  transform: translateX(5px);
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .experience .timeline {
+    margin-top: 2rem;
+  }
+  .experience .timeline::after {
+    left: 31px;
+  }
+  .experience .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .experience .container::after {
+    font-size: 1.8rem;
+  }
+  .experience .container::before {
+    left: 10px;
+  }
+  .experience .left::before {
+    right: 20px;
+  }
+  .experience .right::before {
+    left: 20px;
+  }
+  .morebtn {
+    margin-top: 3rem;
+  }
+}
+/* experience media queries ends */
+
+/* experience section ends */
+
 
 /* skills section starts */
 .skills {
@@ -630,7 +825,6 @@ header .navbar ul li a:hover{
 }
 /* education media queries ends*/
 /* education section ends */
-
 /* work section starts */
 .work {
   background: linear-gradient(to bottom, #000031, #00002c);
@@ -649,60 +843,71 @@ header .navbar ul li a:hover{
   margin: 2rem;
 }
 .work .box-container .box {
+  position: relative;
   border-radius: .5rem;
   box-shadow: 0 .5rem 1rem rgba(225, 219, 219, 0.895);
-  position: relative;
   overflow: hidden;
   height: 30rem; /* Fixed height */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  background: #000; /* Add a background color to prevent image overflow issues */
 }
 .work .box-container .box img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit:cover;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.work .box-container .box:hover img {
+  transform: scale(1.1); /* Slight zoom on hover if desired */
 }
 .work .box-container .box .content {
-  height: 100%;
-  width: 100%;
   position: absolute;
-  top: 85%;
+  top: 0; /* Cover the whole card */
   left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
+  transform: translateY(100%); /* Initially hide content below the card */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.work .box-container .box:hover .content {
+  transform: translateY(0); /* Slide up to cover the entire card */
 }
 .work .box-container .box .content .tag {
+  width: 100%;
+  height: 4.5rem;
+  background: #0f46a2;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 4.5rem;
-  width: 100%;
   padding-left: 1rem;
-  background: #0f46a2;
+  color: white;
 }
 .work .box-container .box .content .tag h3 {
   font-size: 2rem;
-  color: white;
+  margin: 0; /* Ensure margin doesn't affect layout */
 }
-.work .box-container .box:hover .content {
-  top: 15%;
-}
-.work .desc {
-  margin: 2rem;
+.work .box-container .box .content .desc {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  height: 100%; /* Ensure it takes full height of the card */
+  padding: 1rem;
+  overflow: hidden; /* Hide overflow content */
 }
-.work .desc p {
+.work .box-container .box .content .desc p {
   font-size: 1.5rem;
+  margin-bottom: 1rem; /* Space between text and buttons */
 }
-.work .desc .btns {
+.work .box-container .box .content .desc .btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Adjust as needed */
   width: 100%;
-  margin-top: 2rem;
+  margin-top: auto; /* Push to the bottom */
 }
-.work .desc .btns .btn {
+.work .box-container .box .content .desc .btns .btn {
   line-height: 0;
   display: inline;
   padding: 1.5rem 2.5rem;
@@ -710,9 +915,9 @@ header .navbar ul li a:hover{
   font-size: 1.5rem;
   color: #fff;
   background: rgb(12, 12, 12);
-  margin-right: 2rem;
+  transition: background 0.3s;
 }
-.work .desc .btns .btn:hover {
+.work .box-container .box .content .desc .btns .btn:hover {
   background: #310ae0f5;
 }
 .work .viewall {
@@ -749,7 +954,6 @@ header .navbar ul li a:hover{
   transform: translateX(5px);
 }
 /* work section ends */
-
 
 
 
