@@ -85,11 +85,12 @@
         "icon": "https://img.icons8.com/color/48/visual-studio-code-2019.png"
     },
     {
+        "name": "Tailwind CSS",
+        "icon": "https://img.icons8.com/?id=4PiNHtUJVbLs&format=png&color=000000"
+    },  
+    {
         "name": "Postman",
         "icon": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-shadow-tal-revivo.png"
-    },
-    {
-        "name": "Team Work",
-        "icon": "https://img.icons8.com/color/48/000000/teamwork.png"
-    }    
+    }
+ 
 ]
