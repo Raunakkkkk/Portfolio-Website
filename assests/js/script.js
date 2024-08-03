@@ -57,7 +57,7 @@ function(){
 
 // <!-- typed js effect starts -->
     var typed = new Typed(".typing-text", {
-        strings: ["Full-Stack development", "Competitive Programming", "Data Structures and Algorithms"],
+        strings: ["Full-Stack Development", "Competitive Programming", "Data Structures and Algorithms","Machine Learning"],
         loop: true,
         typeSpeed: 50,
 		backSpeed: 35,
